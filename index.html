@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/menu.css" />
+    <link rel="stylesheet" href="styles/content.css" />
+    <link rel="stylesheet" href="styles/util.css" />
+    <link rel="stylesheet" href="styles/button.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <script
+      src="https://kit.fontawesome.com/9424d2b80a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Pokémons</title>
+  </head>
+  <body>
+    <header>
+      <nav class="header">
+        <div class="pokemon-logo">
+          <img src="images/pokemon.png" alt="pokemon_logo" />
+        </div>
+        <div class="full-menu">
+          <ul>
+            <a href=""><li>Stats</li></a>
+            <a href=""><li>Ranks</li></a>
+            <a href=""><li>Randomizer</li></a>
+            <a href=""><li>Links</li></a>
+          </ul>
+        </div>
+        <div class="menu-icon">
+          <i id="icon" class="fa-solid fa-bars fa-xl"></i>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="content-container">
+        <h2>Introduction</h2>
+        <p>
+          Welcome to Pokémon website, your go-to source for all things Pokémon!
+        </p>
+        <p>
+          Whether you're a seasoned Trainer or just curious about the world of
+          Pokémon, we've got you covered. Explore the fascinating world of
+          pocket monsters and discover their abilities, evolutions, and more
+          right here.
+        </p>
+      </section>
+      <section class="content-container">
+        <h2>Pokémon Getter</h2>
+        <button id="pokemon-getter-button" class="button">
+          Get Random Pokemons
+        </button>
+        <div class="pokemon-stage"></div>
+      </section>
+      <section class="content-container">
+        <h2>Password Validator</h2>
+        <div class="password-validator-container">
+          <form>
+            <label>Password</label>
+            <input type="password" name="" id="password-1" />
+            <label>Repeat password</label>
+            <input type="password" name="" id="password-2" />
+            <input type="submit" value="Log in" class="button" />
+          </form>
+          <p class="password-invalid hidden">Passwords do not match!</p>
+        </div>
+      </section>
+      <section class="content-container">
+        <h2>Text to make the webpage taller. For scrolling.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quis,
+          ipsa eaque, debitis aperiam illo optio laborum et saepe maxime
+          sapiente tempora unde magni totam itaque molestiae ab, est laboriosam.
+        </p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quis,
+          ipsa eaque, debitis aperiam illo optio laborum et saepe maxime
+          sapiente tempora unde magni totam itaque molestiae ab, est laboriosam.
+        </p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quis,
+          ipsa eaque, debitis aperiam illo optio laborum et saepe maxime
+          sapiente tempora unde magni totam itaque molestiae ab, est laboriosam.
+        </p>
+      </section>
+    </main>
+    <div class="theme-switch clickable">
+      <i id="theme-switch" class="fa-regular fa-moon fa-xl"></i>
+    </div>
+    <div class="to-top-scroller clickable">
+      <i id="to-top-scroller" class="fa-solid fa-arrow-up fa-xl"></i>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <p>
+          Jakub Nedoma 2023 <br />
+          <span class="footer-small-text">
+            Nemám vztah k Pokemonům, chtěl jsem jen někde použít to API.
+          </span>
+        </p>
+      </div>
+    </footer>
+    <!-- scripts -->
+    <script type="module" src="scripts/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+:root {
+  --header-height: 4rem;
+}
+
+nav {
+  position: relative;
+  padding-right: 1rem;
+}
+
+.header {
+  height: var(--header-height);
+  background-color: var(--header-color);
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.pokemon-logo {
+  width: auto;
+  height: 50px;
+  margin-left: 1rem;
+}
+
+.full-menu {
+  width: 22rem;
+}
+
+.full-menu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.full-menu a {
+  color: var(--header-text-color);
+}
+
+.full-menu a:hover {
+  color: lightgray;
+}
+
+.menu-icon {
+  display: none;
+  color: var(--header-text-color);
+  /* font-size: 30px; */
+}
+
+.menu-icon i:hover {
+  color: lightgray;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .menu-icon {
+    display: inline;
+  }
+
+  .full-menu {
+    position: absolute;
+    top: var(--header-height);
+    background-color: var(--header-color);
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+    display: none;
+  }
+
+  .full-menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .full-menu {
+    display: block !important;
+  }
+}
